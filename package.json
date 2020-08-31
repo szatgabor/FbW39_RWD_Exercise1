@@ -1,0 +1,26 @@
+{
+  "name": "fbw39_rwd_exercise1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --ignore public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szatgabor/FbW39_RWD_Exercise1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/szatgabor/FbW39_RWD_Exercise1/issues"
+  },
+  "homepage": "https://github.com/szatgabor/FbW39_RWD_Exercise1#readme",
+  "dependencies": {
+    "connect-livereload": "^0.6.1",
+    "express": "^4.17.1",
+    "livereload": "^0.9.1",
+    "path": "^0.12.7"
+  }
+}
