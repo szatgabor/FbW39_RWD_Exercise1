@@ -5,7 +5,9 @@
 }
 
 main {
-    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100vw;
     height: auto;
     background: #e7e7e7;
     text-align: center;
@@ -19,9 +21,9 @@ h3 {
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 1.5em;
     letter-spacing: 3px;
-    margin-bottom: 12px;
+    margin-bottom: 3vh;
 }
 
 p,
@@ -34,78 +36,81 @@ a {
 }
 
 header {
-    padding: 60px 60px 20px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 15vh;
+    padding: 1em 1em;
     background: #1de05e;
 }
 
+#movie-div,
+#tribute-info,
+#img-div {
+    margin: 0.8em 1em;
+}
+
 header #title {
-    font-size: 50px;
-    letter-spacing: 5px;
+    font-size: 2em;
+    letter-spacing: .2em;
 }
 
 header #subtitle {
-    font-size: 25px;
+    font-size: 1.3em;
     color: #494949;
+    padding-top: .7em;
 }
 
 #img-div {
     width: auto;
     height: auto;
     border-radius: 10px;
-    margin: 0px 30px;
-    padding: 40px 0px;
+    padding: 1.9em 0px;
 }
 
 #image {
-    max-width: 80%;
+    width: 100%;
     border-radius: 15px;
     display: block;
     margin: auto;
 }
 
 #img-caption {
-    font-size: 16px;
+    font-size: .8em;
     color: #555454;
 }
 
 #tribute-info {
-    width: 80%;
-    margin: 10px auto;
     background: #1de05e;
-    padding: 10px 50px;
+    padding: 1em 1.2em;
     border-radius: 10px;
 }
 
 #timeline-ul {
-    margin: 20px;
+    margin: 1.7em;
     text-align: start;
 }
 
 #timeline-ul li {
-    font-size: 16px;
+    font-size: .8em;
     color: #292929;
     word-spacing: 2px;
     line-height: 2em;
 }
 
 #timeline-ul li:hover {
-    font-size: 25px;
+    font-size: 1em;
     cursor: pointer;
     color: #ffffff;
     transition: font-size 0.3s ease;
 }
 
-#movie-div {
-    margin: 60px auto;
-}
-
 #embed_movie {
-    width: 70%;
-    height: 90vh;
+    width: 100%;
 }
 
 #quote-div p {
-    font-size: 25px;
+    font-size: 1.3em;
     color: #494949;
 }
 
@@ -115,17 +120,19 @@ header #subtitle {
 }
 
 #more-reading {
-    margin-top: 60px;
-    padding: 20px;
+    margin-top: 4em;
+    padding: 1.2em;
     background: #1de05e;
 }
 
 #more-reading p {
-    font-size: 20px;
+    font-size: 1.2em;
     color: #ffffff;
 }
 
 #heart {
-    width: 25px;
-    height: 25px;
+    width: 1.2em;
+    height: 1.2em;
 }
+
+/* @media only screen and (min-width: 426px) */
